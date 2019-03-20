@@ -1,0 +1,86 @@
+body {
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+}
+
+.codebattle-center {
+    /* xin chao :3 */
+    width: 100%;
+    min-height: 1px;
+    flex-basis: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.c0d3 {
+    color: #ffffff;
+    text-align: left;
+}
+
+.codebattle-label {
+    display: inline-block;
+    position: relative;
+    font-size: 4.2rem;
+    font-weight: 600;
+}
+
+.scroll-black {
+    color: black;
+}
+
+/* introduce-video */
+
+.introduct-video {
+    margin: 2%;
+    padding: 2%;
+}
+
+.space {
+    padding-top: 1%;
+}
+
+.label {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.information {}
+
+.about-code-battle {}
+
+.club {
+    display: flex;
+}
+
+.club img {
+    width: 100%;
+    height: 100%;
+}
+
+#header {
+    height: 90px;
+    background-color: #fff;
+}
+
+#header img {
+    position: absolute;
+    ;
+    z-index: 999;
+}
+
+#header:before {
+    z-index: 0;
+    position: absolute;
+    margin-top: 44px;
+    width: 100%;
+    height: 2px;
+    background-color: #e5e5e5;
+}
+
+#header:before, #header:after {
+    content: " ";
+    display: table;
+}
+
+@media screen and (min-width: 768px) {
+
+}

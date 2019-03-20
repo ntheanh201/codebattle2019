@@ -1,0 +1,1 @@
+2019/03/20 01:25:44 [error] 8110#8110: *229 directory index of "/var/www/projects/codebattle/public/assets/img/" is forbidden, client: 127.0.0.1, server: codebattle.local, request: "GET /assets/img/ HTTP/1.1", host: "codebattle.local"
