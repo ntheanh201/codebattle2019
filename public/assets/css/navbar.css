@@ -82,6 +82,8 @@
   margin-bottom: 20px;
   background-color: #fff !important;
   border-radius: 0 0 6px 6px;
+  /* position: sticky;
+  position: -webkit-sticky; */
 }
 
 @media screen and (min-width:768px) {
@@ -138,6 +140,9 @@
     border-radius: 6px;
   }
 
+  .kinn-margin {
+    margin: -100px 30px -5px !important;
+  }
 }
 
 @media screen and (min-width:768px) {
