@@ -91,7 +91,7 @@
   /* hide header space */
   .header-space {
     transform: translate3d(0px, 0px, 0px);
-    height: 60vh;
+    height: 80vh;
     margin: 0;
     border: 0;
     padding: 0;
@@ -149,6 +149,9 @@
   }
   .navbar>.container .navbar-brand-centered, .navbar>.container-fluid .navbar-brand-centered {
     margin-left: -80px;
+  }
+  .hiddenTA {
+    display: block !important;
   }
 }
 
