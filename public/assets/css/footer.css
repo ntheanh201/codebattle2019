@@ -1,6 +1,6 @@
 .footer-bottom {
     padding: 15px 0 15px 0;
-    background: #444;
+    /* background: #444; */
     text-align: left;
     color: #fff;
 }
@@ -27,6 +27,7 @@
 }
 
 .footer-copyright {
+    color: black;
     padding-top: 5px;
 }
 

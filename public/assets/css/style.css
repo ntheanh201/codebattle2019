@@ -1,5 +1,10 @@
 body {
-    font-family: Roboto, Helvetica, Arial, sans-serif;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-size: 18px;
+}
+
+h4 {
+    font-family: Roboto Slab, Times New Roman, serif;
 }
 
 .codebattle-center {
@@ -23,6 +28,10 @@ body {
     font-weight: 600;
 }
 
+.about-codebattle {
+    font-size: 180px;
+}
+
 .scroll-black {
     color: black;
 }
@@ -40,12 +49,15 @@ body {
 
 .label {
     text-align: center;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
+    color: #3C4858;
+    margin-top: 20px;
+    min-height: 32px;
+    font-weight: 700;
+    font-family: "Roboto Slab", "Times New Roman", serif;
+    margin-bottom: 20px;
+    text-decoration: none;
 }
-
-.information {}
-
-.about-code-battle {}
 
 .club img {
     width: 100%;
@@ -93,14 +105,106 @@ body {
     .club-hidden {
         display: none!important;
     }
-
     .club-mobile {
         display: block !important;
     }
-
     .center-image {
         display: block;
         margin-left: auto;
         margin-right: auto;
     }
+}
+
+/* introduce competitive */
+
+.battle-form {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+
+.battle-form .battle {
+    margin: 0;
+    box-sizing: border-box;
+    flex-grow: 0;
+    flex-basis: 100%;
+    flex-grow: 0;
+    max-width: 33.333333%;
+    width: 100%;
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.battle-form .battle .jss399 {
+    color: rgba(0, 0, 0, 0.87);
+    width: 100%;
+    border: 0;
+    display: flex;
+    position: relative;
+    min-width: 0;
+    word-wrap: break-word;
+    font-size: .875rem;
+    margin-top: 30px;
+    background: #fff;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+    margin-bottom: 30px;
+    border-radius: 6px;
+    flex-direction: column;
+    margin-top: 30px;
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    .battle-form .battle {
+        max-width: 100%;
+    }
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    .battle-form .battle .jss399 {
+        display: inline-block !important;
+    }
+}
+
+.battle-form .label-form {
+    margin: 0;
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 100%;
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.battle-form .label-form .label {
+    color: #ffffff;
+    min-height: 32px;
+    font-weight: 700;
+    font-family: "Roboto Slab", "Times New Roman", serif;
+    margin-bottom: 35px;
+    text-decoration: none;
+}
+
+.battle-form .battle .content {
+    flex: 1 1 auto;
+    padding: 0.9375rem 1.875rem;
+    -webkit-box-flex: 1;
+    font-size: 18px;
+}
+
+.body-battle-form {
+    padding: 80px 0;
+    position: relative;
+    background: radial-gradient(ellipse at center, #585858 0, #232323 100%);
+    background-size: cover;
+    background-color: #343434;
+    background-position: 50%;
+    background-image: url('/assets/img/bg.jpg');
 }
