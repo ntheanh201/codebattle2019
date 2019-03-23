@@ -18,18 +18,17 @@
 
     <!-- nav bar -->
     <nav class="navbar navbar-light navbar-expand-md fixed-top before-theanhdz hiddenTA" id="theanhdz">
-        <div class="container"><a class="navbar-brand navbar-brand-centered" href="#"> <img src="assets/img/logo.jpg"
-                    style="height: 60%; width: 60%;"></a><button class="navbar-toggler" data-toggle="collapse"
+        <div class="container"><a class="navbar-brand navbar-brand-centered" href="#"> <img src="assets/img/logo.jpg"></a><button class="navbar-toggler" data-toggle="collapse"
                 data-target="#navcol-1"><span class="sr-only">CodeBattle</span><span
                     class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse">
                 <ul class="nav navbar-nav scroll-black" id="nav-link">
-                    <li class="header-item" role="presentation"><a class="header-link" href="#">Home </a></li>
-                    <li class="header-item" role="presentation"><a class="header-link" href="#">Bảng xếp hạng </a></li>
+                    <li class="header-item" role="presentation"><a class="header-link" href="/">Home </a></li>
+                    <li class="header-item" role="presentation"><a class="header-link" href="/rank">Bảng xếp hạng </a></li>
                 </ul>
                 <ul class="nav navbar-nav ml-auto scroll-black" id="nav-link">
                     <li class="header-item" role="presentation"><a class="header-link" href="#">Nhà tài trợ </a></li>
-                    <li class="header-item" role="presentation"><a class="header-link" href="#">Giới thiệu </a></li>
+                    <li class="header-item" role="presentation"><a class="header-link" href="#introduce">Giới thiệu </a></li>
                 </ul>
             </div>
         </div>
@@ -37,12 +36,12 @@
 
     <!-- mobile navbar -->
     <div id="header" class="showTA">
-        <img src="assets/img/logo.jpg" style="height: 60px; margin: 15px 80px;">
+        <img src="assets/img/logo.jpg" style="height: 60px; margin: 15px 80px">
     </div>
     <!-- end navbar -->
     <!-- background -->
     <div class="header-space">
-        <!-- <div class="codebattle-center">
+        <div class="codebattle-center hiddenTA">
             <div class="container">
                 <div class="c0d3">
                     <h1 class="codebattle-label">
@@ -50,15 +49,15 @@
                     </h1>
                 </div>
             </div>
-        </div> -->
+        </div>
     </div>
     <!-- end background -->
 </head>
 
 <body data-aos-easing="ease-in-out-sine" data-aos-duration="400" data-aos-delay="0">
-    <div class="kinn" id="ntheanh201">
+    <div class="kinn" id="ntheanh201 about">
         <!-- content -->
-        <div class="container-fluid">
+        <div class="container-fluid" id="introduce">
             <div class="row space">
                 <div class="col-lg-6 introduce-video">
                     <h4 class="label">Giới thiệu CodeBattle</h4>
@@ -183,7 +182,7 @@
                 <div class="battle-form">
                     <div class="label-form">
                         <h4 class="label">
-                            Thể lệ cuộc thi
+                            Luật chơi
                         </h4>
                     </div>
 
@@ -285,18 +284,96 @@
         </div>
         <!-- end -->
         <br>
-        <div class="col-sm-12">
-            <div class="row justify-content-sm-center">
 
-                <div class="">
-                    <p>Bạn đã sẵn sàng tham chiến?</p>
-                </div>
-                <div class="col-sm-6">
-                    <a href="/battle" title="" class="btn btn-primary aos-init aos-animate" data-aos="fade-up">
-                        <p>Tham Chiến</p>
-                    </a>
-                </div>
+        <div class="container-fluid">
+            <div class="text-center">
+                <p class="atk">Bạn đã sẵn sàng tham chiến?</p>
             </div>
+            <div class="attack-button text-center">
+                <a id="atk" href="#" data-title="Tham chiến"></a>
+            </div>
+            <style>
+                .attack-button a {
+                    position: relative;
+                    display: inline-block;
+                    padding: 1.2em 2em;
+                    text-decoration: none;
+                    text-align: center;
+                    cursor: pointer;
+                    -webkit-user-select: none;
+                    -moz-user-select: none;
+                    -ms-user-select: none;
+                    user-select: none;
+                    color: white;
+                }
+
+                .attack-button a::before {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    bottom: 0;
+                    right: 0;
+                    background: linear-gradient(135deg, #6e8efb, #a777e3);
+                    border-radius: 4px;
+                    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+                    -webkit-transform: translateY(var(--ty, 0)) rotateX(var(--rx, 0)) rotateY(var(--ry, 0)) translateZ(var(--tz, -12px));
+                    transform: translateY(var(--ty, 0)) rotateX(var(--rx, 0)) rotateY(var(--ry, 0)) translateZ(var(--tz, -12px));
+                }
+
+                .attack-button a:hover::before {
+                    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+                }
+
+                .attack-button a::after {
+                    position: relative;
+                    display: inline-block;
+                    content: attr(data-title);
+                    font-weight: bold;
+                    letter-spacing: .01em;
+                }
+
+            </style>
+            <script>
+                const docStyle = document.documentElement.style;
+                const aElem = document.querySelector('#atk');
+                const boundingClientRect = aElem.getBoundingClientRect();
+
+                aElem.onmousemove = function (e) {
+
+                    const x = e.clientX - boundingClientRect.left;
+                    const y = e.clientY - boundingClientRect.top;
+
+                    const xc = boundingClientRect.width / 2;
+                    const yc = boundingClientRect.height / 2;
+
+                    const dx = x - xc;
+                    const dy = y - yc;
+
+                    docStyle.setProperty('--rx', `${dy / -1}deg`);
+                    docStyle.setProperty('--ry', `${dx / 10}deg`);
+
+                };
+
+                aElem.onmouseleave = function (e) {
+
+                    docStyle.setProperty('--ty', '0');
+                    docStyle.setProperty('--rx', '0');
+                    docStyle.setProperty('--ry', '0');
+
+                };
+
+                aElem.onmousedown = function (e) {
+
+                    docStyle.setProperty('--tz', '-25px');
+
+                };
+
+                document.body.onmouseup = function (e) {
+
+                    docStyle.setProperty('--tz', '-12px');
+
+                };</script>
         </div>
         <br>
     </div>
@@ -336,7 +413,6 @@
                 $('#theanhdz').removeClass('before-theanhdz');
                 document.getElementById("theanhdz").style.backgroundColor = "#fff";
                 $('#nav-link').addClass('c0d3');
-                $('#ntheanh201').addClass('kinn-margin');
             }
             if ($(window).scrollTop() < 281) {
                 $('#theanhdz').removeClass('after-theanhdz');

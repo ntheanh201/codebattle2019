@@ -7,31 +7,6 @@ h4 {
     font-family: Roboto Slab, Times New Roman, serif;
 }
 
-.codebattle-center {
-    /* xin chao :3 */
-    width: 100%;
-    min-height: 1px;
-    flex-basis: auto;
-    padding-left: 15px;
-    padding-right: 15px;
-}
-
-.c0d3 {
-    color: #ffffff;
-    text-align: left;
-}
-
-.codebattle-label {
-    display: inline-block;
-    position: relative;
-    font-size: 4.2rem;
-    font-weight: 600;
-}
-
-.about-codebattle {
-    font-size: 180px;
-}
-
 .scroll-black {
     color: black;
 }
@@ -207,4 +182,8 @@ h4 {
     background-color: #343434;
     background-position: 50%;
     background-image: url('/assets/img/bg.jpg');
+}
+
+.atk {
+    font-size: 20px;
 }
