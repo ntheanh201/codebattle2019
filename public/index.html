@@ -11,11 +11,11 @@
     <link rel="stylesheet" href="assets/css/navbar.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/footer.css">
-    <link rel="stylesheet" href="assets/css/aos.css">
+    <!-- <link rel="stylesheet" href="assets/css/aos.css"> -->
     <link rel="stylesheet" href="assets/css/c0d3b4ttl3.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;lang=en" />
-    <!-- <script src="assets/js/theanhdz.js"></script> -->
+    <script src="assets/js/theanhdz.js"></script>
 
     <!-- nav bar -->
     <nav class="navbar navbar-light navbar-expand-md fixed-top before-theanhdz hiddenTA" id="theanhdz">
@@ -65,10 +65,11 @@
                     <h4 class="label">Giới thiệu CodeBattle</h4>
                     <p class="about-code-battle">
                         Code Battle 2019 dựa theo mô hình CTF (Capture the Flag – Kiến thức chuyên sâu về bảo mật máy
-                        tính), 
+                        tính),
                         ACM/ICPC (ACM International Collegiate Programming Contest – Cuộc thi lập trình sinh viên
                         quốc
-                        tế) và N/A lần thứ 3 được tổ chức bởi 5 câu lạc bộ tin học đến từ các trường Đại học Thăng Long, Đại
+                        tế) và N/A lần thứ 3 được tổ chức bởi 5 câu lạc bộ tin học đến từ các trường Đại học Thăng Long,
+                        Đại
                         học FPT, Đại học Khoa học tự nhiên và Học
                         viện
                         Công nghệ Bưu chính Viễn thông. <br>
@@ -105,7 +106,7 @@
             <!-- responsive -->
             <div class="row justify-content-sm-center club-hidden">
                 <div class="col-sm-12">
-                    <div class="information"data-aos="fade-up">
+                    <div class="information" data-aos="fade-up">
                         <h4 class="label">Ban tổ chức</h4>
                     </div>
                     <div class="row justify-content-sm-center" style="margin-left: 2%;">
@@ -274,7 +275,7 @@
                                     <h4 class="card-title text-center">
                                         <!-- <i class="fa fa-connectdevelop"></i> -->
                                         <i class="fa fa-eye-slash"></i>
-                                         N/A</h4>
+                                        N/A</h4>
                                 </div>
                             </div>
                             <div class="content">
@@ -410,19 +411,17 @@
 <script>
     //fixed-top
     $(document).ready(function () {
-
         $(window).scroll(function () {
             console.log($(window).scrollTop())
             if ($(window).scrollTop() > 280) {
                 $('#theanhdz').addClass('after-theanhdz');
                 $('#theanhdz').removeClass('before-theanhdz');
-                document.getElementById("theanhdz").style.backgroundColor = "#fff";
-                $('#nav-link').addClass('c0d3');
+                // document.getElementById("theanhdz").style.backgroundColor = "#ff";
             }
             if ($(window).scrollTop() < 281) {
                 $('#theanhdz').removeClass('after-theanhdz');
                 $('#theanhdz').addClass('before-theanhdz');
-                document.getElementById("theanhdz").style.backgroundColor = "transparent";
+                // document.getElementById("theanhdz").style.backgroundColor = "transparent";
             }
         });
     });
