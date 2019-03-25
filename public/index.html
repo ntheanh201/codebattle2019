@@ -11,16 +11,17 @@
     <link rel="stylesheet" href="assets/css/navbar.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/footer.css">
-    <!-- <link rel="stylesheet" href="assets/css/aos.css"> -->
+    <link rel="stylesheet" href="assets/css/aos.css">
     <link rel="stylesheet" href="assets/css/c0d3b4ttl3.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;lang=en" />
+    <link href="assets/fontawesome/css/all.css" rel="stylesheet">
     <script src="assets/js/theanhdz.js"></script>
 
     <!-- nav bar -->
     <nav class="navbar navbar-light navbar-expand-md fixed-top before-theanhdz hiddenTA" id="theanhdz">
         <div class="container"><a class="navbar-brand navbar-brand-centered" href="#"> <img
-                    src="assets/img/logo.jpg"></a>
+                    src="assets/img/logo.jpg"></a><button class="navbar-toggler" data-toggle="collapse"
+                data-target="#navcol-1"><span class="sr-only">CodeBattle</span><span
+                    class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse">
                 <ul class="nav navbar-nav scroll-black" id="nav-link">
                     <li class="header-item" role="presentation"><a class="header-link" href="/">Home </a></li>
@@ -45,7 +46,7 @@
     <div class="header-space">
         <div class="codebattle-center hiddenTA">
             <div class="container">
-                <div class="c0d3" data-aos="fade-up" data-aos-duration="700">
+                <div class="c0d3 aos-init" data-aos="fade-up" data-aos-duration="700">
                     <h1 class="codebattle-label">
                         CodeBattleVN 2019.
                     </h1>
@@ -65,11 +66,10 @@
                     <h4 class="label">Giới thiệu CodeBattle</h4>
                     <p class="about-code-battle">
                         Code Battle 2019 dựa theo mô hình CTF (Capture the Flag – Kiến thức chuyên sâu về bảo mật máy
-                        tính),
-                        ACM/ICPC (ACM International Collegiate Programming Contest – Cuộc thi lập trình sinh viên
+                        tính)
+                        và ACM/ICPC (ACM International Collegiate Programming Contest – Cuộc thi lập trình sinh viên
                         quốc
-                        tế) và N/A lần thứ 3 được tổ chức bởi 5 câu lạc bộ tin học đến từ các trường Đại học Thăng Long,
-                        Đại
+                        tế) lần thứ 3 được tổ chức bởi 5 câu lạc bộ tin học đến từ các trường Đại học Thăng Long, Đại
                         học FPT, Đại học Khoa học tự nhiên và Học
                         viện
                         Công nghệ Bưu chính Viễn thông. <br>
@@ -89,7 +89,7 @@
                     <h4 class="label">Thể lệ</h4>
                     <p class="about-code-battle">
                         Các bạn sinh viên sẽ tranh đấu theo đội (3 thành viên), giải quyết các bài toán thuộc 3 dạng là
-                        ACM, CTF và N/A trong vòng 6 giờ đồng hồ.
+                        ACM, CTF và AI trong vòng 6 giờ đồng hồ.
                     </p>
                 </div>
                 <div class="col-lg-6">
@@ -106,7 +106,7 @@
             <!-- responsive -->
             <div class="row justify-content-sm-center club-hidden">
                 <div class="col-sm-12">
-                    <div class="information" data-aos="fade-up">
+                    <div class="information"data-aos="fade-up">
                         <h4 class="label">Ban tổ chức</h4>
                     </div>
                     <div class="row justify-content-sm-center" style="margin-left: 2%;">
@@ -268,7 +268,7 @@
                         </div>
                     </div>
                     <!-- n/a -->
-                    <div class="battle" data-aos="fade-up" data-aos-duration="2000">
+                    <div class="battle" data-aos="fade-up" data-aos-duration="2500">
                         <div class="jss399">
                             <div class="card-header-primary">
                                 <div class="card-text">
@@ -377,7 +377,8 @@
 
                     docStyle.setProperty('--tz', '-12px');
 
-                };</script>
+                };
+                </script>
         </div>
         <br>
     </div>
@@ -411,17 +412,19 @@
 <script>
     //fixed-top
     $(document).ready(function () {
+
         $(window).scroll(function () {
             console.log($(window).scrollTop())
             if ($(window).scrollTop() > 280) {
                 $('#theanhdz').addClass('after-theanhdz');
                 $('#theanhdz').removeClass('before-theanhdz');
-                // document.getElementById("theanhdz").style.backgroundColor = "#ff";
+                document.getElementById("theanhdz").style.backgroundColor = "#fff";
+                $('#nav-link').addClass('c0d3');
             }
             if ($(window).scrollTop() < 281) {
                 $('#theanhdz').removeClass('after-theanhdz');
                 $('#theanhdz').addClass('before-theanhdz');
-                // document.getElementById("theanhdz").style.backgroundColor = "transparent";
+                document.getElementById("theanhdz").style.backgroundColor = "transparent";
             }
         });
     });
