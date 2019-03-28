@@ -97,6 +97,7 @@ h4 {
     display: flex;
     flex-wrap: wrap;
     box-sizing: border-box;
+    height: auto !important;
 }
 
 .battle-form .battle {
@@ -181,7 +182,6 @@ h4 {
     background-size: cover;
     background-color: #343434;
     background-position: 50%;
-    background-image: url('/assets/img/bg.jpg');
 }
 
 .atk {
