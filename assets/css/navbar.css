@@ -7,6 +7,10 @@
   position: relative;
 }
 
+.header-item i {
+  margin-right: .5em;
+}
+
 .navbar-brand-centered {
   height: 100%;
 }
