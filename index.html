@@ -7,6 +7,7 @@
     <meta name="copyright" content="The Anh">
     <meta name="author" content="The Anh">
     <title>CodeBattle 2019</title>
+    <link rel='icon' href='assets/img/logo.jpg' type='image/x-icon'/ >
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/navbar.css">
     <link rel="stylesheet" href="assets/css/style.css">
@@ -106,7 +107,7 @@
                 <img src="assets/img/header/hq.png" alt="" class="_lt3" style="opacity: 0.901234;">
                 <div class="tmc hiddenTA" style="opacity: 1;">
                     <a href="http://localhost/code_battle/battle" title=""
-                        class="btn btn-danger btn-uppercase btn-medium umc invisible" style="font-size: 14.84px;">
+                        class="btn btn-danger btn-uppercase btn-medium umc" style="font-size: 14.84px;">
                         <p>Tham Chiến</p>
                     </a>
                 </div>
@@ -154,7 +155,7 @@
                         quyết những bài toán khó. <br> Bạn đã sẵn sàng để thử sức trong một cuộc đua gay cấn, hồi hộp
                         nhất từ
                         trước đến nay giữa các anh tài chưa?
-                    </p>
+                    </p><br>
                     <hr style="width: 50%; margin: auto;">
                     <h4 class="label">Thể lệ</h4>
                     <p class="about-code-battle">
@@ -162,7 +163,7 @@
                         ACM, CTF và {N/A} trong vòng 6 giờ đồng hồ.
                     </p>
                 </div>
-                <div class="col-lg-6 text-center hiddenTA">
+                <div class="col-lg-6">
                     <!-- <div class="embed-responsive embed-responsive-16by9 col-xs-12 text-center">
                         <iframe width="1280" height="720" src="https://www.youtube.com/embed/kkD2pD4HRtg"
                             frameborder="0"
@@ -265,9 +266,9 @@
                     </div>
 
                 </div>
-                <div class="battle-form">
+                <div class="battle-form list">
                     <!-- acm -->
-                    <div class="battle" data-aos="fade-up">
+                    <div class="battle item" data-aos="fade-up">
                         <div class="jss399">
                             <div class="card-header-primary">
                                 <div class="card-text">
@@ -305,7 +306,7 @@
                         </div>
                     </div>
                     <!-- ctf -->
-                    <div class="battle" data-aos="fade-up" data-aos-duration="800">
+                    <div class="battle item" data-aos="fade-up" data-aos-duration="800">
                         <div class="jss399">
                             <div class="card-header-primary">
                                 <div class="card-text">
@@ -338,7 +339,7 @@
                         </div>
                     </div>
                     <!-- {N/A} -->
-                    <div class="battle" data-aos="fade-up" data-aos-duration="2500">
+                    <div class="battle item" data-aos="fade-up" data-aos-duration="2500">
                         <div class="jss399">
                             <div class="card-header-primary">
                                 <div class="card-text">
@@ -461,7 +462,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-6 footer-copyright text-center">
-                        © CodeBattleVN 2019 | The Anh (Kinn)
+                        © CodeBattleVN 2019 | Thế Anh | CLB Lập Trình PTIT
                     </div>
                     <div class="col-md-6 footer-social text-center">
                         <a href="#" id="twitter"><i class="fab fa-twitter"></i></a>
@@ -498,6 +499,7 @@
                 $('#theanhdz').addClass('invisible');
             }
         });
+        $('[data-toggle="tooltip"]').tooltip();
     });
 
     //back to top script
@@ -518,11 +520,6 @@
             scrollTop: 0
         }, 'slow');
     }
-
-    //scroll theanhdz
-    $(document).ready(function () {
-        $('[data-toggle="tooltip"]').tooltip();
-    });
 
     AOS.init({
         easing: 'ease-in-out-sine'

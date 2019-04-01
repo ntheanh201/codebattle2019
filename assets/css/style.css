@@ -60,7 +60,8 @@ h4 {
     background-color: #e5e5e5;
 }
 
-#header:before, #header:after {
+#header:before,
+#header:after {
     content: " ";
     display: table;
 }
@@ -69,8 +70,9 @@ h4 {
 
 @media screen and (min-width: 768px) {
     .club-hidden {
-        display: block!important;
+        display: block !important;
     }
+
     .club-mobile {
         display: none !important;
     }
@@ -78,11 +80,13 @@ h4 {
 
 @media screen and (max-width: 768px) {
     .club-hidden {
-        display: none!important;
+        display: none !important;
     }
+
     .club-mobile {
         display: block !important;
     }
+
     .center-image {
         display: block;
         margin-left: auto;
@@ -106,31 +110,12 @@ h4 {
     flex-grow: 0;
     flex-basis: 100%;
     flex-grow: 0;
-    max-width: 33.333333%;
+    max-width: 33%;
     width: 100%;
     position: relative;
     min-height: 1px;
     padding-left: 15px;
     padding-right: 15px;
-}
-
-.battle-form .battle .jss399 {
-    color: rgba(0, 0, 0, 0.87);
-    width: 100%;
-    border: 0;
-    display: flex;
-    position: relative;
-    min-width: 0;
-    word-wrap: break-word;
-    font-size: .875rem;
-    margin-top: 30px;
-    background: #fff;
-    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
-    margin-bottom: 30px;
-    border-radius: 6px;
-    flex-direction: column;
-    margin-top: 30px;
-    text-align: center;
 }
 
 @media screen and (max-width: 768px) {
@@ -139,7 +124,8 @@ h4 {
     }
 }
 
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+@media all and (-ms-high-contrast: none),
+(-ms-high-contrast: active) {
     .battle-form .battle .jss399 {
         display: inline-block !important;
     }
@@ -186,4 +172,51 @@ h4 {
 
 .atk {
     font-size: 20px;
+}
+
+
+.cd-section .list {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding-bottom: 10px;
+}
+
+@media screen and (min-width: 768px) {
+    .cd-section .list .item {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        border-radius: 3px;
+        background-color: #fff;
+        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+        text-align: center;
+        margin-left: 1px;
+        margin-right: 1px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .battle-form .battle .jss399 {
+        color: rgba(0, 0, 0, 0.87);
+        width: 100%;
+        border: 0;
+        display: flex;
+        position: relative;
+        min-width: 0;
+        word-wrap: break-word;
+        font-size: .875rem;
+        margin-top: 30px;
+        background: #fff;
+        margin-bottom: 30px;
+        border-radius: 6px;
+        flex-direction: column;
+        margin-top: 30px;
+        text-align: center;
+        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+    }
 }
