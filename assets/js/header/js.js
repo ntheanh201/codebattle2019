@@ -3,8 +3,8 @@ $(document).ready(function(){
 	banner = $('.banner').width();
 	$('.banner').css({'height':banner*3000/7325});
 	reset = $('.tmc a').css('fontSize');
-	size = reset.replace('px', '');
-	$('.tmc a').css({'fontSize':(banner+size*200)/275});
+	// size = reset.replace('px', '');
+	// $('.tmc a').css({'fontSize':(banner+size*200)/275});
 	// resize
 	$(window).resize(function(){
 		banner = $('.banner').width();

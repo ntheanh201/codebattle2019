@@ -201,6 +201,17 @@ h4 {
     }
 }
 
+@media screen and (min-width: 1200px){
+    .intro img {
+        position: absolute;
+        margin: auto;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .battle-form .battle .jss399 {
         color: rgba(0, 0, 0, 0.87);
