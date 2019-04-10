@@ -16,10 +16,8 @@ p {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	/* height: 100vh; */
+	height: 5%;
 	background-size: cover;
-	/* background-position: 50%; */
-	/* background-image: url('//assets/img/ntheanh201/cover.jpg'); */
 }
 
 .header-transform img {
