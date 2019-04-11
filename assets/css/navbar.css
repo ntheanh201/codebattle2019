@@ -101,8 +101,7 @@
 
   /* hide header space */
   .header-space {
-    /* height: 60vh; */
-    /* height: 20%; */
+    width: 100%;
   }
 
   .navbar-brand-centered {
