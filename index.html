@@ -16,8 +16,9 @@
     <link rel="stylesheet" href="assets/css/transform.css">
     <link rel="stylesheet" href="assets/css/c0d3b4ttl3.css">
     <link href="assets/fontawesome/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="node_modules/jq-fakeloader/dist/fakeLoader.min.css">
     <script src="assets/js/theanhdz.js"></script>
-    <!-- nav bar -->
+
     <nav class="navbar navbar-light navbar-expand-md fixed-top hiddenTA invisible" id="theanhdz">
         <div class="container"><a class="navbar-brand navbar-brand-centered" href="#"> <img
                     src="assets/img/label.png"></a>
@@ -55,6 +56,7 @@
 </head>
 
 <body data-aos-easing="ease-in-out-sine" data-aos-duration="900" data-aos-delay="0">
+    <div class="fakeLoader"></div>
     <div class="kinn">
         <!-- content -->
         <div class="container-fluid" id="introduce" id="about">
@@ -378,12 +380,12 @@
                 <script src="assets/js/jquery.min.js"></script>
                 <script src="assets/bootstrap/js/bootstrap.min.js"></script>
                 <script src="assets/js/aos.js"></script>
+                <script src="node_modules/jq-fakeloader/dist/fakeLoader.min.js"></script>
 </body>
 
 <script>
     //fixed-top
     $(document).ready(function () {
-
         $(window).scroll(function () {
             // console.log($(window).scrollTop());
             var scrollTop = 0;
@@ -423,6 +425,13 @@
     AOS.init({
         easing: 'ease-in-out-sine'
     });
+    $(document).ready(function(){
+                $.fakeLoader({
+                    timeToHide:1200,
+                    bgColor:"#9b59b6",
+                    spinner:"spinner7"
+                });
+            });
 </script>
 
 </html>

@@ -1,0 +1,3 @@
+const displayLoadingScreen = () => {
+    // alert("loading");
+}
