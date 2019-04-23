@@ -32,6 +32,12 @@ h4 {
     margin: 2vh;
 }
 
+.donors-img img {
+    /* height: 140px;
+    width: 150px; */
+    margin: 2vh;
+}
+
 .mobile-header {
     height: 90px;
     background-color: #242424;
@@ -44,16 +50,6 @@ h4 {
 }
 
 /* clubs */
-
-@media screen and (min-width: 580px) {
-    .club-hidden {
-        display: block !important;
-    }
-
-    .club-mobile {
-        display: none !important;
-    }
-}
 
 @media screen and (max-width: 580px) {
     .club-hidden {
